@@ -28,6 +28,10 @@ infrastructure/
 scripts/
 ```
 
+## Configuração local
+
+Consulte `docs/setup.md` para preparar o ambiente de desenvolvimento, subir PostgreSQL e MinIO, executar frontend, backend e verificações de qualidade.
+
 ## Princípios
 
 - Narrative First.
