@@ -1,0 +1,22 @@
+{
+  "name": "casebook",
+  "private": true,
+  "version": "0.1.0",
+  "workspaces": [
+    "apps/frontend",
+    "packages/ui",
+    "packages/types",
+    "packages/shared"
+  ],
+  "scripts": {
+    "dev:frontend": "npm --workspace apps/frontend run dev",
+    "build:frontend": "npm --workspace apps/frontend run build",
+    "lint:frontend": "npm --workspace apps/frontend run lint",
+    "test:frontend": "npm --workspace apps/frontend run test",
+    "format": "prettier --write .",
+    "check": "npm run lint:frontend && npm run test:frontend"
+  },
+  "devDependencies": {
+    "prettier": "^3.3.3"
+  }
+}

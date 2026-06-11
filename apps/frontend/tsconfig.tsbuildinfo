@@ -1,0 +1,1 @@
+{"root":["./src/main.tsx","./src/routes.tsx","./src/data/sampleproject.ts","./src/layouts/readingshell.tsx","./src/pages/homepage.test.tsx","./src/pages/homepage.tsx","./src/pages/projectreaderpage.test.tsx","./src/pages/projectreaderpage.tsx","./vite.config.ts","./vitest.setup.ts"],"version":"5.9.3"}
