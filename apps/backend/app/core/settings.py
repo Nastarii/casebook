@@ -17,10 +17,15 @@ class Settings(BaseSettings):
     smtp_from_email: str | None = None
     smtp_use_tls: bool = True
     email_confirmation_token_expire_hours: int = 24
+    cors_origins: str = "http://localhost:5173,http://127.0.0.1:5173"
 
     @property
     def email_confirmation_required(self) -> bool:
         return bool(self.smtp_host)
+
+    @property
+    def cors_origin_list(self) -> list[str]:
+        return [origin.strip() for origin in self.cors_origins.split(",") if origin.strip()]
 
     model_config = SettingsConfigDict(env_file=".env", env_file_encoding="utf-8")
 
